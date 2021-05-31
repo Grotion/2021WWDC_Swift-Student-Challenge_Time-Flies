@@ -16,9 +16,9 @@ extension Double {
 
 struct GamePage: View {
     @Binding var currentPage:Pages
-    @State private var totalLevel:Int = 5
+    @State private var totalLevel:Int = 4
     @State private var currentLevel:Int = 1
-    @StateObject private var timer = GameTimer(targetTime: 5.00)
+    @StateObject private var timer = GameTimer(targetTime: 4.00)
     @State private var result:String = "Welcome :)"
     @State private var resultColor:Color = Color(red: 51/255, green: 255/255, blue: 153/255)
     @State private var isWin:Bool = false
@@ -33,7 +33,7 @@ struct GamePage: View {
     func setTargetTime(){
         switch(currentLevel){
         case 1:
-            timer.targetTime = 5.00
+            timer.targetTime = 4.00
             break
         case 2:
             timer.targetTime = 9.00
