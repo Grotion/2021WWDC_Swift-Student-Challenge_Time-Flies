@@ -308,7 +308,7 @@ struct GamePage: View {
                         Text("Timer Disappear \(timer.disappearTime, specifier: "%.2f") Second(s) Before Target")
                         .font(Font.custom("GillSans-Bold", size: 13*zoom))
                         .foregroundColor(.white)
-                        let plusDisable = abs(timer.disappearTime-5.000)<=0.001||runningNshow
+                        let plusDisable = abs(timer.disappearTime-4.000)<=0.001||runningNshow
                         let minusDisable = abs(timer.disappearTime-0.000)<=0.001||runningNshow
                         Button(action:{timer.disappearTime+=1.000}, label: {
                             Text("+")
