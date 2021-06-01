@@ -45,7 +45,7 @@ struct HomePage: View {
                     }
                 }
                 .font(Font.custom("Baskerville-SemiBoldItalic", size: 16*zoom))
-                Text("If we control time, we control everything. Below is an example about time measuring, assuming there is a car running on an empty road, when you speed up time, the car seems still. If you speed up time to limit, the car disappears. Isn’t time amazing?")
+                Text("If we control time, we control everything. Below is an example about time measuring, assuming there is a car running on an empty road, when you speed up time, the car seems still. If you speed up time to the limit, the car disappears. Isn’t time amazing?")
                 .font(Font.custom("GillSans-Bold", size: 16*zoom))
             }
             .foregroundColor(.white)
